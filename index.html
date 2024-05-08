@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>汉诺塔游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>汉诺塔游戏</h1>
+    <div id="game">
+        <div id="pier1" class="pier"></div>
+        <div id="pier2" class="pier"></div>
+        <div id="pier3" class="pier"></div>
+    </div>
+
+    <div id="controls">
+        <label for="disk-select">选择磁盘数量:</label>
+        <select id="disk-select">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <button id="start-button">开始</button>
+        <button id="pause-button" disabled>暂停</button>
+        <button id="resume-button" disabled>恢复</button>
+
+        <label for="time-select">移动时间:</label>
+        <select id="time-select">
+            <option value="5000">快</option>
+            <option value="10000" selected>中等</option>
+            <option value="150000">慢</option>
+        </select>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
